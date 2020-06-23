@@ -1,0 +1,27 @@
+.boxHeader {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  color: var(--color-primary);
+  font-size: 1.375rem;
+}
+
+.box-subTitle {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+.box-subTitle em {
+  font-weight: 400;
+  color: var(--color-secondary-darker)
+}
+
+@media (max-width: 768px) {
+  .box-title {
+    font-size: 1.125rem;
+  }
+}
