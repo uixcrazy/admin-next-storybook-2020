@@ -5,6 +5,14 @@
   user-select: none;
 }
 
+.svg-icon-with-txt {
+  display: flex;
+}
+
+.svg-icon-with-txt svg {
+  font-size: 1em;
+}
+
 .c-pointer {
   cursor: pointer;
 }

@@ -42,6 +42,7 @@ SvgIcon.propTypes = {
   className: PropTypes.string,
   titleAccess: PropTypes.string,
   viewBox: PropTypes.string,
+  fontSize: PropTypes.number,
 };
 
 SvgIcon.defaultProps = {
@@ -81,5 +82,5 @@ export default (props) => {
   );
 };
 
- */
+*/
 

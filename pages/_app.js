@@ -1,5 +1,6 @@
 import App from "next/app";
-import Layout from "../app/Layout";
+
+const Noop = ({ children }) => children;
 
 export default class MyApp extends App {
   componentDidMount() {
@@ -9,13 +10,14 @@ export default class MyApp extends App {
       style.parentNode.removeChild(style);
     }
   }
-
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, router } = this.props;
+    const Layout = Component.Layout || Noop;
+    const route = router.route && router.route.substr(1);
     return (
-      <Layout>
+      <Layout route={route}>
         <Component {...pageProps} />
       </Layout>
-    );
+    )
   }
 }

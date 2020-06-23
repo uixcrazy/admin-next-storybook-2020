@@ -6,7 +6,8 @@
       "alias": {
         "core": "./core",
         "utils": "./core/utils",
-        "icons": "./core/icons"
+        "icons": "./core/icons",
+        "helpers": "./core/helpers"
       }
     }]
   ]

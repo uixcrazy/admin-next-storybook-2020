@@ -1,7 +1,8 @@
+import Head from "next/head";
 import React, { useContext } from "react";
 import withStyles from "react-jss";
 import { MenuContext } from "core/rcontext/MenuContext";
-import DehazeIcon from "icons/material-ui/Dehaze";
+import { DehazeIcon } from "icons/material-ui";
 
 export default withStyles({
   header: {
@@ -21,28 +22,33 @@ export default withStyles({
     color: "rgba(0,0,21,.5)",
     display: "flex",
     fontSize: "1.125rem",
-    alignItems: 'center',
+    alignItems: "center",
   },
   btnToggle: {
     marginRight: ".25rem",
-    display: 'flex',
+    display: "flex",
     "& svg": {
-      fontSize: '1.75rem',
+      fontSize: "1.75rem",
     },
   },
 })(({ classes, onToggleSidebar }) => {
   const [selected] = useContext(MenuContext);
   return (
-    <header className={classes.header}>
-      <div className={`${classes.headerCt} container`}>
-        <div className={classes.headerCtLeft}>
-          <button className={classes.btnToggle} onClick={onToggleSidebar}>
-            <DehazeIcon />
-          </button>
-          {selected.name}
+    <>
+      <Head>
+        <title>Admin : {selected.name}</title>
+      </Head>
+      <header className={classes.header}>
+        <div className={classes.headerCt}>
+          <div className={classes.headerCtLeft}>
+            <button className={classes.btnToggle} onClick={onToggleSidebar}>
+              <DehazeIcon />
+            </button>
+            {selected.name}
+          </div>
+          aaaaaa
         </div>
-        aaaaaa
-      </div>
-    </header>
+      </header>
+    </>
   );
 });

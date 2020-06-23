@@ -8,11 +8,13 @@ import Layout from '../app/Layout';
 
 const Categories = () => {
   return (
-      <div className="container mt-20">
-        aaa
-      </div>
+    <div className="container mt-20">
+      caterofy
+    </div>
   );
 };
+
+Categories.Layout = Layout;
 
 // Categories.getInitialProps = ctx => {
 //   return authInitial(ctx, `/api/categories`);
