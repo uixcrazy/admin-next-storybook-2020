@@ -19,7 +19,7 @@ export default withStyles({
     padding: "0 .5rem",
   },
   headerCtLeft: {
-    color: "rgba(0,0,21,.5)",
+    color: "var(--color-label)",
     display: "flex",
     fontSize: "1.125rem",
     alignItems: "center",

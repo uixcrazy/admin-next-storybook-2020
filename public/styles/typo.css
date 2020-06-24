@@ -25,6 +25,7 @@
 
 .btn-link {
   color: #3273dc;
+  background: transparent;
 }
 
 .btn-link:hover {

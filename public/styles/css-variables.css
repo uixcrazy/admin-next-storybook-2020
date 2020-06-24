@@ -13,12 +13,16 @@
   --color-secondary: #da0f32;
   --color-secondary-darker: #a5122b;
 
-  --color-text: #343a40;
-  --color-text-darker: #424950;
+  --color-text: rgb(0, 0, 21);
+  --color-label: rgba(0,0,21,.5);
+   /* #343a40; */
+  /* --color-text-darker: #424950;
   --color-text-lighter: #666c72;
-  --color-text-darker: #18364a; /* #18364a */
+  --color-text-darker: #18364a;  */
+  /* #18364a */
 
-  --color-label: #858fa2;
+  /* --color-label: #858fa2; */
+  /* rgba(0,0,21,.5) */
   --color-placeholder: #bec3ce;
   --color-border: #ebeff0;
   --border-normal: 1px solid #ebeff0;
