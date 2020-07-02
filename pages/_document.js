@@ -42,7 +42,7 @@ export default class JssDocument extends Document {
           <link rel="icon" type="image/png" href="/favicon-suzuki.png" sizes="32x32"/>
           <link rel="icon" type="image/png" href="/favicon-suzuki.png" sizes="16x16"/>
           <meta name="theme-color" content={"#fff"} />
-          <link rel="stylesheet" href="/styles/index.css" />
+          {/* <link rel="stylesheet" href="/styles/index.css" /> */}
         </Head>
         <body>
           <Main />
