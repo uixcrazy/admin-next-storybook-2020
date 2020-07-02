@@ -6,8 +6,9 @@
       "alias": {
         "core": "./core",
         "utils": "./core/utils",
-        "icons": "./core/icons",
-        "helpers": "./core/helpers"
+        "icons": "./core/icons/kiwi-icons",
+        "helpers": "./core/helpers",
+        "base-components": "./core/base-components"
       }
     }]
   ]

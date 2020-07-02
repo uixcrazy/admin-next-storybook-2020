@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {isArrayEmpty} from "utils";
-import Dropdown from "./";
+import Dropdown from ".";
 
 class DropdownPlaceholder extends Component {
   state = {

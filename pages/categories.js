@@ -28,16 +28,16 @@ Categories.Layout = Layout;
 //   )
 // }
 
-export async function getStaticProps() {
-  const res = await fetch('http://localhost:8000/api/categories')
-  const categories = await res.json()
+// export async function getStaticProps() {
+//   const res = await fetch('http://localhost:8000/api/categories')
+//   const categories = await res.json()
 
-  return {
-    props: {
-      categories,
-    },
-  }
-}
+//   return {
+//     props: {
+//       categories,
+//     },
+//   }
+// }
 
 export default Categories;
 

@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useContext } from "react";
 import withStyles from "react-jss";
 import { MenuContext } from "core/rcontext/MenuContext";
-import { DehazeIcon } from "icons/material-ui";
+import { DehazeIcon } from "icons";
 
 export default withStyles({
   header: {

@@ -5,7 +5,7 @@ import {
   PhotoIcon,
   CalendarIcon,
   ArticleIcon,
-} from "icons/my-icons";
+} from "icons";
 
 export const MENU_LIST = [
   {

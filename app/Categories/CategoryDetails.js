@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
-import { EditIcon } from 'icons/my-icons';
+import { EditIcon } from 'icons';
 
 const CategoryDetails = ({ classes, data }) => {
   console.log('CategoryDetails', data);

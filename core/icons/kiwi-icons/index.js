@@ -4,3 +4,5 @@ export { default as ArticleIcon } from './Article';
 export { default as PhotoIcon } from './Photo';
 export { default as CalendarIcon } from './Calendar';
 export { default as EditIcon } from './Edit';
+export { default as DehazeIcon } from './Dehaze';
+

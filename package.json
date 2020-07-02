@@ -16,7 +16,7 @@
     "next": "^9.4.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-jss": "10.0.0-alpha.9",
+    "react-jss": "^10.3.0",
     "react-sidebar": "^3.0.2",
     "react-table": "^7.2.1",
     "react-toastify": "^6.0.6"
