@@ -12,3 +12,7 @@ export const ToStorybook = () => <Welcome showApp={linkTo('Button')} />;
 ToStorybook.story = {
   name: 'to Storybook',
 };
+/**
+ * sample story
+ * https://storybook.js.org/docs/formats/component-story-format/
+ */
