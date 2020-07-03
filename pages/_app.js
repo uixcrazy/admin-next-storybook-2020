@@ -1,11 +1,12 @@
-import App from "next/app";
+import App from 'next/app';
+import { wrapperStoreSaga } from '../core/store-saga/configureStore';
 import '../core/styles/index.scss'
 
 const Noop = ({ children }) => children;
 
-export default class MyApp extends App {
+class MyApp extends App {
   componentDidMount() {
-    const style = document.getElementById("server-side-styles");
+    const style = document.getElementById('server-side-styles');
 
     if (style) {
       style.parentNode.removeChild(style);
@@ -22,3 +23,5 @@ export default class MyApp extends App {
     )
   }
 }
+
+export default wrapperStoreSaga.withRedux(MyApp)
