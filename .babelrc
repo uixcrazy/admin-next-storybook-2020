@@ -4,6 +4,7 @@
     ["module-resolver", {
       "root": ["."],
       "alias": {
+        "app": "./app",
         "core": "./core",
         "utils": "./core/utils",
         "icons": "./core/icons/kiwi-icons",

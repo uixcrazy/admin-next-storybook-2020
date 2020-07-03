@@ -1,6 +1,6 @@
 import App from 'next/app';
 import { wrapperStoreSaga } from '../core/store-saga/configureStore';
-import '../core/styles/index.scss'
+import '../core/styles/index.scss';
 
 const Noop = ({ children }) => children;
 
