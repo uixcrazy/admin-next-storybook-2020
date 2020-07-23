@@ -1,30 +1,26 @@
-import Link from 'next/link'
-import { useSelector } from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
+import UserCards from "core/base-components/user-card/UserCards";
+import { BRANCH_NAME } from "../store"
 
-function Page({ linkTo, NavigateTo, title }) {
+function Page({}) {
   const placeholderData = useSelector((state) => {
-    console.log(state)
-// làm sao đặt typicodeUsersReducer thành chung
-    return state.typicodeUsersReducer.placeholderData
-  })
-  const error = useSelector((state) => state.error)
-  console.log(placeholderData)
+    return state[BRANCH_NAME].placeholderData;
+  });
+  const error = useSelector((state) => state.error);
   return (
     <div>
-      <h1>{title}</h1>
-      <nav>
-        <Link href={linkTo}>
-          <a>Navigate: {NavigateTo}</a>
-        </Link>
-      </nav>
       {placeholderData && (
-        <pre>
-          <code>{JSON.stringify(placeholderData, null, 2)}</code>
-        </pre>
+        <>
+          <UserCards data={placeholderData} />
+          <pre>
+            <code>{JSON.stringify(placeholderData, null, 2)}</code>
+          </pre>
+        </>
       )}
-      {error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
+      {error && <p style={{ color: "red" }}>Error: {error.message}</p>}
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;

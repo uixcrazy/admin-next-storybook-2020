@@ -33,6 +33,16 @@ export const MENU_LIST = [
     name: "Calendar",
     icon: CalendarIcon,
   },
+  {
+    id: "users",
+    name: "Typicode Users",
+    icon: CalendarIcon,
+  },
+  {
+    id: "unsplash",
+    name: "Unsplash",
+    icon: PhotoIcon,
+  }
 ];
 
 export const MenuContext = createContext({

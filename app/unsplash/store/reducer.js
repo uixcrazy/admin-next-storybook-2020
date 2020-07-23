@@ -1,9 +1,9 @@
-import { HYDRATE } from 'next-redux-wrapper';
 import { ACTION_TYPES } from './actions';
+import { HYDRATE } from 'next-redux-wrapper';
 
 const initialState = {
   error: false,
-  placeholderData: null,
+  photos: null,
 }
 
 function reducer(state = initialState, action) {
@@ -12,16 +12,16 @@ function reducer(state = initialState, action) {
       return { ...state, ...action.payload }
     }
 
-    case ACTION_TYPES.LOAD_USERS_FAILURE:
+    case ACTION_TYPES.LOAD_PHOTOS_FAILURE:
       return {
         ...state,
         ...{ error: action.error },
       }
 
-    case ACTION_TYPES.LOAD_USERS_SUCCESS:
+    case ACTION_TYPES.LOAD_PHOTOS_SUCCESS:
       return {
         ...state,
-        ...{ placeholderData: action.data },
+        ...{ photos: action.data },
       }
 
     default:

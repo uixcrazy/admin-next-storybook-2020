@@ -8,15 +8,15 @@ import {
 function* loadDataSaga() {
   try {
     const res = yield fetch('https://jsonplaceholder.typicode.com/users')
-    const data = yield res.json()
+    const data = yield res.json();
     yield put(loadUsersSuccess(data))
   } catch (err) {
     yield put(loadUsersFailure(err))
   }
 }
 
-function* rootSaga() {
+function* saga() {
   yield takeLatest(ACTION_TYPES.LOAD_USERS_REQUEST, loadDataSaga)
 }
 
-export default rootSaga
+export default saga

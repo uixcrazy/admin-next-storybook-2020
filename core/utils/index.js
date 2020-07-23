@@ -38,3 +38,7 @@ export { default as getScrollbarWidth } from "./get-scrollbar-width";
 // export function isNormalInteger(str) {
 //   return /^\+?(0|[1-9]\d*)$/.test(str);
 // }
+
+export function getCleanUrl(url) {
+  return url.replace(/#.*$/, '').replace(/\?.*$/, '');
+};

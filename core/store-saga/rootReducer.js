@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
 import sampleSagaReducer from 'app/sample-saga/reducers';
-import typicodeUsersReducer from 'app/users/store/reducer';
+import { TypicodeUsers } from 'app/users/store';
+import { Unsplash } from 'app/unsplash/store';
 // import todos from './todos'
 // import counter from './counter'
 
 export default combineReducers({
   sampleSagaReducer,
-  typicodeUsersReducer
+  TypicodeUsers,
+  Unsplash
   // todos,
   // counter
 });

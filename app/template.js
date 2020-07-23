@@ -1,3 +1,6 @@
+
+import withStyles from 'react-jss';
+
 const Sidebar = withStyles({
   // wrapper: { },
 
